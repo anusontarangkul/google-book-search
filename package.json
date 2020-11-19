@@ -1,0 +1,28 @@
+{
+  "name": "google-book-search",
+  "version": "1.0.0",
+  "description": "MERN Stack Google Book Search!",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anusontarangkul/google-book-search.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/anusontarangkul/google-book-search/issues"
+  },
+  "homepage": "https://github.com/anusontarangkul/google-book-search#readme",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.10.15",
+    "nodemon": "^2.0.6"
+  }
+}
