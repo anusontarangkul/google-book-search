@@ -1,4 +1,4 @@
-import react from 'react';
+import React, { useState } from "react";
 import './App.css';
 import Wrapper from './components/Wrapper';
 import Banner from './components/Banner';
