@@ -5,31 +5,44 @@ import Banner from "./components/Banner";
 import Search from "./components/Search";
 import Results from "./components/Results";
 import GoogleBooks from "./utils/GetBooks";
-function App() {
-  const [resultState, setResultState] = useState();
-  function handleSearch(searchedBook) {
-    console.log(searchedBook);
-    GoogleBooks.searchTerms(searchedBook)
-      .then(res => {
+import API from "./utils/api";
 
-        setResultState({
-          ...resultState,
-          title: res.items[0].volumeInfo.title,
-          authors: res.items[0].volumeInfo.authors,
-          description: res.items[0].volumeInfo.description,
-          image: res.items[0].volumeInfo.imageLinks.thumbnail,
-          link: res.items[0].volumeInfo.infoLink
-        })
-          .catch(err => { console.log(err) });
-      });
+function App() {
+  const [resultState, setResultState] = useState([]);
+
+  const handleSearch = (event, searchItem) => {
+    event.preventDefault();
+    //console.log(searchItem);
+    GoogleBooks.searchTerms(searchItem)
+      .then(res => {
+        //console.log(res);
+        setResultState([...resultState, {
+          title: res.data.items[0].volumeInfo.title,
+          authors: res.data.items[0].volumeInfo.authors,
+          description: res.data.items[0].volumeInfo.description,
+          image: res.data.items[0].volumeInfo.imageLinks.thumbnail,
+          link: res.data.items[0].volumeInfo.infoLink
+        }])
+        
+      }).catch(err => { console.log(err) });
   }
-  console.log(resultState);
+  //by id of result state push books to db
+  const handleSave = (event, index) =>{
+    event.preventDefault();
+    console.log("hit saved");
+    console.log(resultState[index]);
+    API.saveBook(resultState[index])
+    .then(res =>{
+      console.log("saved");
+    }).catch(err => { console.log(err) });
+  }
+  //console.log(resultState);
   return (
     <div className="App">
       <Wrapper>
         <Banner />
         <Search handleSearch={handleSearch} />
-        <Results result={resultState} />
+        <Results results={resultState} handleSave = {handleSave}/>
       </Wrapper>
     </div>
   );
