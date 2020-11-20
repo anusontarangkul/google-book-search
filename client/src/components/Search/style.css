@@ -1,0 +1,17 @@
+input {
+  margin-top: 48px;
+  width: 80%;
+  padding:10px;
+  background: linear-gradient(to right, rgb(35, 35, 35), rgb(255, 255, 255, .1));
+  border:none;
+  color:  rgba(255, 255, 255, 0.9) !important;
+  font-family: "Poppins", sans-serif;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0 0 35px rgba(0, 0, 0, 0.8);
+  outline: none;
+}
+  
+::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
