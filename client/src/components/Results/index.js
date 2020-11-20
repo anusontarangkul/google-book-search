@@ -6,12 +6,15 @@ function Results(results) {
     <div class="row">
     {/* {results.map(cards => ( */}
       <div class="card">
-        <div class="card-body">
-          <h5 class="card-title"></h5>
-          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+        <div class="body">
+          <h3 class="title">title</h3>
+          <h5 class="author">By author</h5>
+          <button class="view">View</button>
+          <button class="Delete">Delete</button>
+          <hr/>
+          <img class="image" src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png"/>
+          <h6 class="subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
     {/* ))} */}
