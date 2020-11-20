@@ -4,6 +4,7 @@ import "./style.css";
 function Results({results}) {
   return <article className="resultsContainer container-fluid d-flex justify-content-center">
     <div class="row">
+
     {results.map((cards, index)  => (
       <div key={index} class="card">
         <div class="body">
@@ -15,14 +16,17 @@ function Results({results}) {
             </div>
             <div class="col-4">
               <button class="view btn btn-outline-primary">Save</button>
+
               <button class="delete btn btn-outline-danger">Delete</button>
             </div>
             <hr/>
           </div>
+
           <a href = {cards.link} target= "_blank">
           <img class="image" src={cards.image} alt = {cards.title}/>
           </a>
           <p class="text">{cards.description}</p>
+
         </div>
       </div>
      ))}
