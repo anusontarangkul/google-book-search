@@ -1,29 +1,35 @@
 import React from "react";
 import "./style.css";
 
-function Results(results) {
+function Results({results}) {
   return <article className="resultsContainer container-fluid d-flex justify-content-center">
     <div class="row">
-    {/* {results.map(cards => ( */}
-      <div class="card">
+
+    {results.map((cards, index)  => (
+      <div key={index} class="card">
         <div class="body">
           <div class="row">
             <div class="col-8 header">
-              <h3 class="title">title</h3>
-              <h5 class="author">By author</h5>
+              <h3 class="title">{cards.title}</h3>
+              <h5 class="author">By {cards.authors}</h5>
               
             </div>
             <div class="col-4">
-              <button class="view btn btn-outline-primary">View</button>
+              <button class="view btn btn-outline-primary">Save</button>
+
               <button class="delete btn btn-outline-danger">Delete</button>
             </div>
             <hr/>
           </div>
-          <img class="image" src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png"/>
-          <p class="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+
+          <a href = {cards.link} target= "_blank">
+          <img class="image" src={cards.image} alt = {cards.title}/>
+          </a>
+          <p class="text">{cards.description}</p>
+
         </div>
       </div>
-    {/* ))} */}
+     ))}
     </div>
   </article>;
 }

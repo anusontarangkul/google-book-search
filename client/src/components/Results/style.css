@@ -1,6 +1,7 @@
 .resultsContainer{
   width: 80% !important;
-  height: 50%;
+  height: auto;
+
   background: linear-gradient(to right, #1c1c1c, #1e1e1e) !important;
   box-shadow: -.5rem 0 3rem #000 !important;
   margin-top: 50px;
