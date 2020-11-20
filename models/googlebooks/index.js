@@ -11,7 +11,7 @@ var BookSchema = new Schema({
         required: true
     },
     authors: {
-        type: String,
+        type: Array,
         required: true
     },
 
