@@ -7,6 +7,14 @@
   padding:60px;
 }
 
+.pageHeader{
+  width: 100%;
+  padding: 40px;
+}
+
+.row{
+  width: 100% !important;
+}
 .card {
   
   height: auto !important;
