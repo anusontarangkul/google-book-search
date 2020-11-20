@@ -7,13 +7,19 @@ function Results(results) {
     {/* {results.map(cards => ( */}
       <div class="card">
         <div class="body">
-          <h3 class="title">title</h3>
-          <h5 class="author">By author</h5>
-          <button class="view">View</button>
-          <button class="Delete">Delete</button>
-          <hr/>
+          <div class="row">
+            <div class="col-8 header">
+              <h3 class="title">title</h3>
+              <h5 class="author">By author</h5>
+              
+            </div>
+            <div class="col-4">
+              <button class="view btn btn-outline-primary">View</button>
+              <button class="delete btn btn-outline-danger">Delete</button>
+            </div>
+            <hr/>
+          </div>
           <img class="image" src="https://media.sproutsocial.com/uploads/2017/02/10x-featured-social-media-image-size.png"/>
-          <h6 class="subtitle mb-2 text-muted">Card subtitle</h6>
           <p class="text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
         </div>
       </div>
