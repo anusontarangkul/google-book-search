@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Results({results}) {
+function Results({results, handleSave}) {
   return <article className="resultsContainer container-fluid d-flex justify-content-center">
     <div class="row">
 
@@ -15,7 +15,7 @@ function Results({results}) {
               
             </div>
             <div class="col-4">
-              <button class="view btn btn-outline-primary">Save</button>
+              <button class="view btn btn-outline-primary" onClick = {event => handleSave(event, index)}>Save</button>
 
               <button class="delete btn btn-outline-danger">Delete</button>
             </div>
