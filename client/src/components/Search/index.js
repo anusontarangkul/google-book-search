@@ -6,7 +6,7 @@ function Search(props) {
   //console.log(inputRef.current.value)
   return (
   <div>
-    <form onSubmit={(event) => props.handleSearch(event, inputRef.current.value)}>
+    <form onSubmit={(event) => props.handleSearch(event, inputRef.current.value) }>
       <input 
       type="text" 
       ref ={inputRef}  

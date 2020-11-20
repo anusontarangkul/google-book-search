@@ -3,15 +3,26 @@ import "./style.css";
 
 function Results({results}) {
   return <article className="resultsContainer container-fluid d-flex justify-content-center">
-    <div className="row">
-    {results.map(cards => ( 
-      <div key={cards.title} className="card">
-        <div className="card-body">
-          <h5 className="card-title"></h5>
-          <h6 className="card-subtitle mb-2 text-muted">{cards.title}</h6>
-          <p className="card-text">{cards.description}</p>
-          <img src = {cards.image}/>
-          <a href={cards.link} className="card-link">Google Books link</a>
+    <div class="row">
+    {results.map((cards, index)  => (
+      <div key={index} class="card">
+        <div class="body">
+          <div class="row">
+            <div class="col-8 header">
+              <h3 class="title">{cards.title}</h3>
+              <h5 class="author">By {cards.authors}</h5>
+              
+            </div>
+            <div class="col-4">
+              <button class="view btn btn-outline-primary">Save</button>
+              <button class="delete btn btn-outline-danger">Delete</button>
+            </div>
+            <hr/>
+          </div>
+          <a href = {cards.link} target= "_blank">
+          <img class="image" src={cards.image} alt = {cards.title}/>
+          </a>
+          <p class="text">{cards.description}</p>
         </div>
       </div>
      ))}

@@ -1,4 +1,4 @@
-import {useState} from "react";
+import React, { useState } from "react";
 import "./App.css";
 import Wrapper from "./components/Wrapper";
 import Banner from "./components/Banner";
@@ -10,10 +10,10 @@ function App() {
 
   const handleSearch = (event, searchItem) => {
     event.preventDefault();
-    console.log(searchItem);
+    //console.log(searchItem);
     GoogleBooks.searchTerms(searchItem)
       .then(res => {
-        console.log(res);
+        //console.log(res);
         setResultState([...resultState, {
           title: res.data.items[0].volumeInfo.title,
           authors: res.data.items[0].volumeInfo.authors,
@@ -21,10 +21,10 @@ function App() {
           image: res.data.items[0].volumeInfo.imageLinks.thumbnail,
           link: res.data.items[0].volumeInfo.infoLink
         }])
-          
+        
       }).catch(err => { console.log(err) });
   }
-  console.log(resultState);
+  //console.log(resultState);
   return (
     <div className="App">
       <Wrapper>
