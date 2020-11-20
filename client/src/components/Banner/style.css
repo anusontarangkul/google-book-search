@@ -1,0 +1,6 @@
+.navbar {
+    background: linear-gradient(to right, #1c1c1c, #1e1e1e) !important;
+    color: rgba(255, 255, 255, 0.8);
+    box-shadow: -1rem 0 3rem #000 !important;
+    padding: 40px;
+  }

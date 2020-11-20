@@ -1,0 +1,6 @@
+.resultsContainer{
+  width: 80%;
+  height: 50%;
+background: linear-gradient(to right, #1c1c1c, #1e1e1e) !important;
+box-shadow: -1rem 0 3rem #000 !important;
+}
