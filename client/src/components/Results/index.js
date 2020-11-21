@@ -3,8 +3,12 @@ import "./style.css";
 
 function Results({results, handleSave}) {
   return <article className="resultsContainer container-fluid d-flex justify-content-center">
-    <div class="row">
-
+    <div class="row justify-content-md-center">
+    <div class="col-12">
+    <h1 className="pageHeader">Saved</h1>
+    </div>
+  </div>
+    
     {results.map((cards, index)  => (
       <div key={index} class="card">
         <div class="body">
@@ -30,7 +34,6 @@ function Results({results, handleSave}) {
         </div>
       </div>
      ))}
-    </div>
   </article>;
 }
 

@@ -36,13 +36,13 @@ function App() {
       console.log("saved");
     }).catch(err => { console.log(err) });
   }
-  //console.log(resultState);
+
   return (
     <div className="App">
       <Wrapper>
         <Banner />
-        <Search handleSearch={handleSearch} />
-        <Results results={resultState} handleSave = {handleSave}/>
+          <Search handleSearch={handleSearch} />
+          <Results results={resultState} handleSave = {handleSave}/>
       </Wrapper>
     </div>
   );
