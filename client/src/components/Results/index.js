@@ -2,9 +2,8 @@ import React from "react";
 import "./style.css";
 
 function Results({results, handleSave}) {
-  return <article className="resultsContainer container-fluid d-flex justify-content-center">
-    <div class="row">
-
+  return <article className="resultsContainer container container-fluid d-flex justify-content-center">
+   
     {results.map((cards, index)  => (
       <div key={index} class="card">
         <div class="body">
@@ -30,7 +29,6 @@ function Results({results, handleSave}) {
         </div>
       </div>
      ))}
-    </div>
   </article>;
 }
 

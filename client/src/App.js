@@ -4,6 +4,8 @@ import Wrapper from "./components/Wrapper";
 import Banner from "./components/Banner";
 import Search from "./components/Search";
 import Results from "./components/Results";
+import SavedBanner from "./components/SavedBanner";
+import Saved from "./components/Saved";
 import GoogleBooks from "./utils/GetBooks";
 import API from "./utils/api";
 
@@ -36,13 +38,13 @@ function App() {
       console.log("saved");
     }).catch(err => { console.log(err) });
   }
-  //console.log(resultState);
+
   return (
     <div className="App">
       <Wrapper>
         <Banner />
-        <Search handleSearch={handleSearch} />
-        <Results results={resultState} handleSave = {handleSave}/>
+          <Search handleSearch={handleSearch} />
+          <Results results={resultState} handleSave = {handleSave}/>
       </Wrapper>
     </div>
   );

@@ -9,8 +9,9 @@
 }
 
 .pageHeader{
-  width: 100%;
+  width: 100% !important;
   padding: 40px;
+  margin:50px;
 }
 
 .row{
