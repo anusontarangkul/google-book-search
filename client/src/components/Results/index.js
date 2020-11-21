@@ -15,8 +15,7 @@ function Results({results, handleSave}) {
             </div>
             <div class="col-4">
               <button class="view btn btn-outline-primary" onClick = {event => handleSave(event, index)}>Save</button>
-
-              <button class="delete btn btn-outline-danger">Delete</button>
+              <a href = {cards.link} target= "_blank"><button target= "_blank" class="view btn btn-outline-primary">View</button></a>
             </div>
             <hr/>
           </div>
