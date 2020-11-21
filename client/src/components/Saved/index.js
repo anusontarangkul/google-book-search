@@ -3,9 +3,7 @@ import "./style.css";
 
 function Saved(saved) {
   return <article className="savedContainer container-fluid d-flex justify-content-center">
-  <div class="row">
-    <h1 className="pageHeader">Saved</h1>
-  </div>
+    
   {saved.map((cards, index)  => (
     <div key={index} class="card">
       <div class="body">
