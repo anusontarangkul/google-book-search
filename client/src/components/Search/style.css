@@ -1,7 +1,9 @@
 input {
   margin-top: 48px;
-  width: 50%;
+  width: 100% !important;
   padding:10px;
+  padding-left:60px;
+  padding-right:60px;
   background: linear-gradient(to right, rgb(35, 35, 35), rgb(255, 255, 255, .1));
   border:none;
   color:  rgba(255, 255, 255, 0.9) !important;
