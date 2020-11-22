@@ -3,8 +3,9 @@
   height: 50%;
   background: linear-gradient(to right, #1c1c1c, #1e1e1e) !important;
   box-shadow: -.5rem 0 3rem #000 !important;
-  margin-top: 50px;
+  margin-top: 10px;
   padding:60px;
+  margin-bottom:50px;
 }
 
 .card {

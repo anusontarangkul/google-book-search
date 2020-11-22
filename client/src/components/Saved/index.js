@@ -4,7 +4,6 @@ import "./style.css";
 function Saved({ saved, handleDelete }) {
 
   return <article className="savedContainer container-fluid justify-content-center">
-
     {saved.map((cards, index) => (
       <div key={index} class="card">
         <div class="body">
