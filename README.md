@@ -1,6 +1,6 @@
 # Google Book Search
 
-Find and save books using Google API.
+Find and save books using Google API. [Deployment](https://salty-chamber-90587.herokuapp.com/)
 
 ## Description
 
@@ -20,7 +20,7 @@ This app helps you organize the books that you wanted to read. It uses a Google 
 
 ## Installation
 
-Go to the deployed link.
+Go to the deployed link. [Deployment](https://salty-chamber-90587.herokuapp.com/)
 
 ## Usage
 
